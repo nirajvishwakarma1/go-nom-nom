@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 // 👉 React Element
 
@@ -16,19 +18,50 @@ import ReactDOM from "react-dom/client";
 // const jsxHeading = <h1 className="head" tabIndex="1">Namaste React using JSX 🚀</h1>;
 // const jsxHeading = (<h1 className="head" tabIndex="1">Namaste React using JSX 🚀</h1>);
 
-const tech = <span>React</span>;
-const adj = "fast";
+const siteName = <span>NRJ</span>;
+const tagLine = "Lorem ipsum dolor";
 const menuItems = ["Home", "About Us", "Services", "Contact Us"];
+const styleBranding = {
+    backgroundColor: "yellow",
+    padding: "10px"
+};
 
-const branding = (
+const Logo = () => <FontAwesomeIcon icon={faHeart} size="2x" />;
+const Branding = () => (
   <>
-    <h1 tabIndex="1">
-      🙏 Namaste {tech}
-    </h1>
-    <p>
-      {tech} is {adj} 🐇
-    </p>
+    <div className="logo-wrap">
+      <Logo />
+      <h1>{siteName}</h1>
+    </div>
+    <p>{tagLine}</p>
   </>
+);
+
+const Search = () => (
+  <div className="search-wrap">
+    <form action="/search" method="GET">
+      <input type="search" name="q" placeholder="Search..." required />
+      <button type="submit">Search</button>
+    </form>
+  </div>
+);
+
+const UserIcon = () => (
+  <div className="user-wrap">
+    <FontAwesomeIcon icon={faUser} size="2x" />
+  </div>
+);
+
+const Menu = () => (
+  <div className="menu">
+    <ul>
+      {menuItems.map((item) => (
+        <li key={item}>
+          <a href={"#" + item.toLowerCase().replace(" ", "-")}>{item}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
 );
 
 // 👉 React Component
@@ -38,13 +71,15 @@ const branding = (
 // 🟢 Functional Component
 const Header = () => (
   <header className="header" tabIndex="5">
-    <div className="container">
-      <div className="branding">{branding}</div>
-      <ul>
-        {menuItems.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
+    <div className="container header-top">
+      <div className="branding-wrap" style={styleBranding}>
+        <Branding />
+      </div>
+      <Search />
+      <UserIcon />
+    </div>
+    <div className="container menu-wrap">
+      <Menu />
     </div>
   </header>
 );
@@ -78,4 +113,4 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // const app = <MainComponent />
 // root.render(app);
 
-root.render(<MainComponent />)
+root.render(<MainComponent />);

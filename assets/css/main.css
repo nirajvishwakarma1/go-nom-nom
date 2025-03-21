@@ -1,14 +1,73 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
 }
-.container {padding: 0 20px;}
-h1 {color: #a00;}
+
+.container {
+    padding: 0 20px;
+}
+
+h1 {
+    color: #a00;
+}
+
 h2 {
-  font-size: 20px;
-  color: #444;
+    font-size: 20px;
+    color: #444;
 }
-p {color: #222;}
-.branding h1 {margin-bottom: 0;}
-.branding p {margin-top: 0; font-style: italic;}
+
+p {
+    color: #222;
+}
+
+header.header .container.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: anchor-center;
+    justify-content: space-evenly;
+}
+
+.branding-wrap h1,
+.branding-wrap p {
+    margin: 0;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.container.menu-wrap {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    background-color: #F0F0F0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 16px 32px;
+}
+
+.menu ul li a:hover {
+    background-color: #EEE;
+}
+
+footer.footer {
+    height: 6vh;
+    border-top: 1px solid #CCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
