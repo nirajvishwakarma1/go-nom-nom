@@ -1,58 +1,81 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const header = React.createElement(
-    "h1",
-    { id: "heading" },
-    [
-        "Header",
-        React.createElement("hr")
-    ]
-);
-const footer = React.createElement(
-    "h1",
-    { id: "heading" },
-    [
-        React.createElement('hr'),
-        "Footer"
-    ]
-);
+// 👉 React Element
 
-const section1 = React.createElement(
-    "section",
-    { id: 'section1' },
-    React.createElement(
-        "div",
-        { id: "parent" },
-        [
-            React.createElement(
-                "div",
-                { id: "child1" },
-                [
-                    React.createElement('h2', { id: 'heading2' }, 'Lorem ipsum dolor'),
-                    React.createElement('p', { id: 'paragraph' }, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
-                    React.createElement('hr', {}),
-                ]
-            ),
-            React.createElement(
-                "div",
-                { id: 'child2' },
-                [
-                    React.createElement('h2', { id: 'heading2' }, "Lorem ipsum dolor"),
-                    React.createElement('p', { id: 'paragraph' }, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'),
-                ]
-            )
-        ]
-    )
+// React.createElement ==> ReactElement-JS Object ==> HTML Element (render)
+// const heading = React.createElement(
+//   "h1",
+//   { id: "heading" },
+//   "Namaste  React 🚀"
+// );
+
+// JSX - it's not HTML inside JS. it's HTML-like or XML-like syntax
+// JSX trnspiled before it reaches to the JS engine - Parcel transpile using Babel.
+// JSX ==> Babel transpiles it into React.createElement ==> ReactElement-JS Object ==> HTML Element (render)
+// const jsxHeading = <h1 className="head" tabIndex="1">Namaste React using JSX 🚀</h1>;
+// const jsxHeading = (<h1 className="head" tabIndex="1">Namaste React using JSX 🚀</h1>);
+
+const tech = <span>React</span>;
+const adj = "fast";
+const menuItems = ["Home", "About Us", "Services", "Contact Us"];
+
+const branding = (
+  <>
+    <h1 tabIndex="1">
+      🙏 Namaste {tech}
+    </h1>
+    <p>
+      {tech} is {adj} 🐇
+    </p>
+  </>
 );
 
-console.log(section1);
+// 👉 React Component
+// - Class Components
+// - Functional Components
 
+// 🟢 Functional Component
+const Header = () => (
+  <header className="header" tabIndex="5">
+    <div className="container">
+      <div className="branding">{branding}</div>
+      <ul>
+        {menuItems.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  </header>
+);
 
-const rootHeader = ReactDOM.createRoot(document.getElementById('header'));
+const Footer = () => (
+  <footer className="footer">
+    <div className="container">©️ 2025 | Namaste React</div>
+  </footer>
+);
+
+// 🟢 Component Composition
+const MainComponent = () => (
+  <>
+    <Header />
+    <div className="container">
+      {console.log("abcd")}
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco.
+      </p>
+    </div>
+    {/* <Footer></Footer> */}
+    {/* {Footer()} */}
+    <Footer />
+  </>
+);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const rootFooter = ReactDOM.createRoot(document.getElementById('footer'));
 
-rootHeader.render(header);
-root.render(section1);
-rootFooter.render(footer);
+// const app = <MainComponent />
+// root.render(app);
+
+root.render(<MainComponent />)

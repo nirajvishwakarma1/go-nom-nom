@@ -1,10 +1,14 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
 }
-h2 {font-size: 20px; color: #444}
-p {
-    color: #222;
+.container {padding: 0 20px;}
+h1 {color: #a00;}
+h2 {
+  font-size: 20px;
+  color: #444;
 }
-header, section, footer {padding: 0 5vw;}
+p {color: #222;}
+.branding h1 {margin-bottom: 0;}
+.branding p {margin-top: 0; font-style: italic;}
