@@ -9,3 +9,20 @@
     position: relative;
     top: 6px;
 }
+
+.card-title {
+    min-height: 54px;
+}
+
+.cuisines {
+    min-height: 50px;
+}
+
+.shimmer-container .card {
+    height: 350px;
+    background-color: #F0F0F0
+}
+
+.area-name {
+    min-height: 50px;
+}
