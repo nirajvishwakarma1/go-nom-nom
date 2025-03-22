@@ -5436,4 +5436,14 @@ const data = {
   csrfToken: "iz6ZbHviNm0r-_h075v53vjaVoPVFkVgGzFjTxJU",
 };
 
-export default data;
+const filterRestaurantsData = (data) => {
+  return data.data.cards
+    .filter((card) => card.card.card.id === "restaurant_grid_listing_v2")
+    .map(
+      (restaurant) =>
+        restaurant.card.card.gridElements.infoWithStyle.restaurants
+    )[0]
+    .map((restaurant) => restaurant.info);
+};
+
+export default filterRestaurantsData(data);

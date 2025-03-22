@@ -1,20 +1,24 @@
 import React, { useState } from "react";
-import { Container, Form, Row, Col, Card } from "react-bootstrap";
+import { Container, Form, Row, Col, Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { CDN_URL } from "../utils/constants";
 
-const cloudinaryBasePath =
-  "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+const RestaurantLists = ({ restaurants }) => {
+  const [restaurantCards, setRestaurantCards] = useState(restaurants);
 
-// Sample restaurant data
-const RestaurantLists = (data) => {
-  const restaurantsData = data.data.data.cards.find(
-    (cards) => cards.card.card.id === "restaurant_grid_listing_v2"
-  );
-  const { restaurants: restaurantCards } =
-    restaurantsData.card.card.gridElements.infoWithStyle;
+  const getMatchingrastaurants = (searchTerm) => {
+    searchTerm = searchTerm.trim().toLowerCase();
+    const matchingRestaurants = restaurants.filter(
+      (restaurant) =>
+        restaurant.name.toLowerCase().includes(searchTerm) ||
+        restaurant.cuisines.some((cuisine) =>
+          cuisine.toLowerCase().includes(searchTerm)
+        )
+    );
+    return setRestaurantCards(matchingRestaurants);
+  };
 
-  console.log(restaurantCards);
   return (
     <Container className="mt-4">
       <h2 className="text-center mb-4">Find You Favourite Restaurant</h2>
@@ -24,12 +28,29 @@ const RestaurantLists = (data) => {
         type="text"
         placeholder="Search by name or cuisine..."
         className="mb-4"
+        onChange={(event) => getMatchingrastaurants(event.target.value)}
       />
+
+      {/* Filters */}
+      <p>
+        <Button
+          variant="primary"
+          size="sm"
+          onClick={() =>
+            setRestaurantCards(() =>
+              restaurantCards.filter((restaurant) => restaurant.avgRating > 4.3)
+            )
+          }
+        >
+          Top Rated Restaurants
+        </Button>
+      </p>
 
       {/* Restaurant Cards Grid */}
       <Row>
         {restaurantCards.length > 0 ? (
           restaurantCards.map((restaurant) => {
+            console.log(restaurant);
             const {
               id,
               name,
@@ -40,14 +61,13 @@ const RestaurantLists = (data) => {
               costForTwo,
               isOpen,
               sla,
-            } = restaurant.info;
+            } = restaurant;
             return (
               <Col md={4} sm={6} key={id} className="mb-4">
-                {console.log(restaurant.info)}
                 <Card>
                   <Card.Img
                     variant="top"
-                    src={cloudinaryBasePath + cloudinaryImageId}
+                    src={CDN_URL + cloudinaryImageId}
                     alt={name}
                     style={{ height: "150px", objectFit: "cover" }}
                   />

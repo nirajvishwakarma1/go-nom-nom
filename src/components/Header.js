@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "./assets/images/go-nom-nom-logo.svg";
+import logo from "../assets/images/go-nom-nom-logo.svg";
 const navs = ["Home", "About", "Services", "Contact"];
 
 const Header = () => {
