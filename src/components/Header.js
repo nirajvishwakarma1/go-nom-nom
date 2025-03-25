@@ -1,8 +1,10 @@
 import React from "react";
+import useOnlineStatus from "../utils/useOnlineStatus.js";
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import logo from "../assets/images/go-nom-nom-logo.svg";
 import { Link } from "react-router";
+
 const navs = ["Home", "About", "Services", "Contact"];
 
 const Header = () => {
@@ -15,6 +17,8 @@ const Header = () => {
   useEffect(() => {
     console.log("uesEffect called");
   }, [buttonName]);
+
+  const onlineStatus = useOnlineStatus();
 
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
@@ -41,6 +45,8 @@ const Header = () => {
         {/* Navigation links */}
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto">
+            <li>Online Status: {onlineStatus ? "🟢" : "🔴"}</li>
+            <Link to="/grocery">Grocery</Link>
             {navs.map((nav, index) => (
               <Link
                 key={index}

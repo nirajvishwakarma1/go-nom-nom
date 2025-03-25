@@ -44,3 +44,10 @@ _Whenever a state variable is changes React re-render the component_
 
 1. **Client side routing**: page does not reload
 2. **Server side routing**: page reload
+
+- Chunking
+- code spliting
+- dynamic bundling
+- lazy loading
+- dynamic import
+- all above are different names for the same things

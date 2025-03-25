@@ -11,8 +11,27 @@ const Shimmer = () => (
 
     {/* Filters */}
     <p>
-      <Button variant="primary" size="sm">
-        Top Rated Restaurants
+      <strong>Filter: </strong>
+      <Button
+        className="restaurant-filter-btn restaurants-filter-btn"
+        variant="primary"
+        size="sm"
+        onClick={() =>
+          setFilteredRestaurantCards(() =>
+            restaurantCards.filter((restaurant) => restaurant.avgRating > 4)
+          )
+        }
+      >
+        Top Rated
+      </Button>
+      &nbsp;
+      <Button
+        className="restaurant-filter-btn show-all-restaurants-btn"
+        variant="success"
+        size="sm"
+        onClick={() => setFilteredRestaurantCards(restaurantCards)}
+      >
+        Show All
       </Button>
     </p>
     <Row>
