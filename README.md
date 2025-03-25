@@ -39,3 +39,8 @@ Types of Export/Import
 - useEffect()
 
 _Whenever a state variable is changes React re-render the component_
+
+## 2 types of routing in web apps
+
+1. **Client side routing**: page does not reload
+2. **Server side routing**: page reload

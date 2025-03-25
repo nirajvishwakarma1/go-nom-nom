@@ -1,16 +1,9 @@
 import { useState, useEffect } from "react";
-import {
-  Container,
-  Form,
-  Row,
-  Col,
-  Card,
-  Button,
-  Spinner,
-} from "react-bootstrap";
+import { Container, Form, Row, Col, Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { CDN_URL, API_URL } from "../utils/constants";
+import { Link } from "react-router";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
@@ -91,7 +84,7 @@ const Body = () => {
       </p>
 
       {/* Restaurant Cards Grid */}
-      <Row>
+      <Row className="restaurant-cards-wrap">
         {filteredRestaurantCards.map((restaurant) => {
           const {
             id,
@@ -105,30 +98,32 @@ const Body = () => {
             sla,
           } = restaurant;
           return (
-            <Col md={3} sm={6} key={id} className="mb-4">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src={CDN_URL + cloudinaryImageId}
-                  alt={name}
-                  style={{ height: "150px", objectFit: "cover" }}
-                />
-                <Card.Body>
-                  <Card.Title>{name}</Card.Title>
-                  <Card.Text>Rating: {avgRating}</Card.Text>
-                  <Card.Text>Cost for two: {costForTwo}</Card.Text>
-                  <Card.Text className="cuisines">
-                    Cuisines: {cuisines.join(", ")}
-                  </Card.Text>
-                  <Card.Text className="area-name">
-                    <FontAwesomeIcon icon={faLocationDot} /> {areaName}
-                  </Card.Text>
-                  <Card.Text>Status: {isOpen ? "Open" : "Closed"}</Card.Text>
-                  <Card.Text>
-                    Delivery time: {sla.deliveryTime} minutes
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+            <Col md={3} sm={6} key={id} className="mb-4 restaurant-card-wrap">
+              <Link to={`/restaurant/${id}`}>
+                <Card>
+                  <Card.Img
+                    variant="top"
+                    src={CDN_URL + cloudinaryImageId}
+                    alt={name}
+                    style={{ height: "150px", objectFit: "cover" }}
+                  />
+                  <Card.Body>
+                    <Card.Title>{name}</Card.Title>
+                    <Card.Text>Rating: {avgRating}</Card.Text>
+                    <Card.Text>Cost for two: {costForTwo}</Card.Text>
+                    <Card.Text className="cuisines">
+                      Cuisines: {cuisines.join(", ")}
+                    </Card.Text>
+                    <Card.Text className="area-name">
+                      <FontAwesomeIcon icon={faLocationDot} /> {areaName}
+                    </Card.Text>
+                    <Card.Text>Status: {isOpen ? "Open" : "Closed"}</Card.Text>
+                    <Card.Text>
+                      Delivery time: {sla.deliveryTime} minutes
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Link>
             </Col>
           );
         })}

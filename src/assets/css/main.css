@@ -26,3 +26,18 @@
 .area-name {
     min-height: 50px;
 }
+
+.footer-logo-anchor {
+    text-decoration: none;
+    color: #EEE;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #EEE;
+    padding: 0 10px;
+}
+
+.restaurant-card-wrap>a {
+    text-decoration: none;
+}
