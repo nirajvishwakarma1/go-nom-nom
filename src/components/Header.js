@@ -1,15 +1,14 @@
 import React from "react";
+import logo from "../assets/images/logo.png";
 import useOnlineStatus from "../utils/useOnlineStatus.js";
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import logo from "../assets/images/go-nom-nom-logo.svg";
-import { Link } from "react-router";
+import { Link, useAsyncError } from "react-router";
 
 const navs = ["Home", "About", "Services", "Contact"];
 
 const Header = () => {
   const [buttonName, setButtonName] = useState("Login");
-  console.log("Header rendered");
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   // If not dependency array ==> useEffect is called on every render
   // If dependency array is empty ==> useEffect is called on initial render once.
@@ -21,61 +20,64 @@ const Header = () => {
   const onlineStatus = useOnlineStatus();
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
-      <Container>
-        {/* Logo / Brand Name */}
-        <Link to="/" className="navbar-brand">
-          {/* <img src={logo} /> */}
-          <svg width="100" height="100">
-            <circle
-              cx="50"
-              cy="50"
-              r="40"
-              stroke="black"
-              strokeWidth="3"
-              fill="red"
-            />
-          </svg>
-          <h1>Go Nom Nom</h1>
+    <header className="bg-gray-300 shadow-md">
+      <div className="container mx-auto flex items-center justify-between px-4 py-3">
+        {/* Logo / Brand */}
+        <Link to="/" className="flex items-center gap-2 text-xl font-bold">
+          <img src={logo} alt="Go Nom Nom" className="h-8" />
         </Link>
 
-        {/* Toggle button for mobile view */}
-        <Navbar.Toggle aria-controls="navbar-nav" />
+        {/* Mobile Menu Toggle */}
+        <button
+          className="block md:hidden p-2 text-gray-700"
+          onClick={() => setIsNavOpen(!isNavOpen)}
+        >
+          ☰
+        </button>
 
-        {/* Navigation links */}
-        <Navbar.Collapse id="navbar-nav">
-          <Nav className="ms-auto">
-            <li>Online Status: {onlineStatus ? "🟢" : "🔴"}</li>
-            <Link to="/grocery">Grocery</Link>
+        {/* Navigation Links */}
+        <nav
+          className={`absolute top-16 left-0 w-full bg-gray-300 p-4 md:static md:w-auto md:p-0 md:flex ${
+            isNavOpen ? "block" : "hidden"
+          }`}
+        >
+          <ul className="flex flex-col md:flex-row md:gap-4 text-lg">
             {navs.map((nav, index) => (
-              <Link
-                key={index}
-                to={`/${nav
-                  .toLowerCase()
-                  .replace(" ", "-")
-                  .replace("home", "")}`}
-              >
-                {nav}
-              </Link>
+              <li key={index}>
+                <Link
+                  to={`/${nav
+                    .toLowerCase()
+                    .replace(" ", "-")
+                    .replace("home", "")}`}
+                  className="hover:text-blue-600"
+                >
+                  {nav}
+                </Link>
+              </li>
             ))}
-            <Nav.Item>
-              <Button
-                className="login"
-                variant="primary"
-                size="sm"
-                onClick={() => {
-                  "login" === buttonName.toLowerCase()
-                    ? setButtonName("Logout")
-                    : setButtonName("Login");
-                }}
+            <li className="mt-1">
+              <Link
+                to="/grocery"
+                className="relative px-4 py-1 bg-green-500 text-white font-bold rounded-full 
+                      hover:bg-green-600 transition-transform transform hover:scale-105"
+              >
+                Grocery
+              </Link>
+            </li>
+            <li>
+              <button
+                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-1 rounded"
+                onClick={() =>
+                  setButtonName(buttonName === "Login" ? "Logout" : "Login")
+                }
               >
                 {buttonName}
-              </Button>
-            </Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 };
 

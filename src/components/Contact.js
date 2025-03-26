@@ -1,11 +1,9 @@
-import { Container } from "react-bootstrap";
-
 const Contact = () => {
   return (
-    <Container className="py-4">
-      <h2>Contact</h2>
-      <p>Lorem ipsum dolor sit amet</p>
-    </Container>
+    <div className="py-8 px-4 bg-gray-100 text-center min-h-[80vh]">
+      <h2 className="text-3xl font-bold text-gray-800 mb-2">Contact</h2>
+      <p className="text-lg text-gray-600">Lorem ipsum dolor sit amet</p>
+    </div>
   );
 };
 

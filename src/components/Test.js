@@ -1,4 +1,3 @@
-import { Container, Row, Col } from "react-bootstrap";
 import ExUseContext from "./ExUseContext";
 import ExRef from "./ExRef";
 import { useEffect, useState } from "react";
@@ -22,19 +21,19 @@ const Test = () => {
   }, []);
 
   return (
-    <Container>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
       {console.log(count1)}
-      <Row>
-        <Col>
-          <h1>Test</h1>
-          <p>
-            count1: <strong>{count1}</strong>
-          </p>
-          {/* <ExUseContext /> */}
+      <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-md text-center">
+        <h1 className="text-3xl font-bold text-gray-800 mb-4">Test</h1>
+        <p className="text-lg text-gray-700">
+          count1: <strong className="text-blue-500">{count1}</strong>
+        </p>
+        <ExUseContext />
+        <div className="mt-4">
           <ExRef />
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 };
 

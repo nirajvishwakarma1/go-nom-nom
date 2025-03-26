@@ -51,3 +51,25 @@ _Whenever a state variable is changes React re-render the component_
 - lazy loading
 - dynamic import
 - all above are different names for the same things
+
+### Higher Order Components:
+
+    Higher order component is a function which takes a component as input and return enhanced version of the component.
+
+```js
+const HigherOrderComponent = (Component) => {
+  return (props) => {
+    return (
+      <div>
+        <label>propmoted</label>
+        <Component {...props} />
+      </div>
+    );
+  };
+};
+```
+
+### ToDo
+
+- State lifting, controlled and uncontrolled component
+- build accordian feature

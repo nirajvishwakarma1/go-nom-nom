@@ -1,6 +1,5 @@
 import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import RestaurantCards from "./components/RestaurantCards.js";
 import Footer from "./components/Footer";
@@ -21,7 +20,7 @@ import useOnlineStatus from "./utils/useOnlineStatus.js";
 const Grocery = lazy(() => import("./components/Grocery.js"));
 
 const App = () => {
-  //   if (!useOnlineStatus()) return <Offline />;
+  if (!useOnlineStatus()) return <Offline />;
 
   return (
     <>

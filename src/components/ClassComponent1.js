@@ -1,6 +1,5 @@
 import React from "react";
 import ClassComponent2 from "./ClassComponent2";
-import { Container, Row, Col } from "react-bootstrap";
 
 class ClassComponent1 extends React.Component {
   constructor(props) {
@@ -27,15 +26,44 @@ class ClassComponent1 extends React.Component {
       skills: ["Node.js", "React", "MongoDB", "MySQL", "JS", "PHP"],
     };
     return (
-      <Container className="py-4">
-        <Row>
-          <Col>
-            <h1>ClassComponent 1</h1>
-            <p>{this.props.name}</p>
-            <ClassComponent2 data={data} email="niraj.vishwa369@gmail.com" />
-          </Col>
-        </Row>
-      </Container>
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
+        <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg">
+          <h1 className="text-2xl font-bold text-gray-800 mb-4">
+            ClassComponent 1
+          </h1>
+          <table className="w-full border-collapse border border-gray-300">
+            <tbody>
+              <tr className="border-b border-gray-300 align-top">
+                <td className="p-3 font-semibold text-gray-700 align-top">
+                  Name:
+                </td>
+                <td className="p-3 text-gray-600 align-top">
+                  {this.props.name}
+                </td>
+              </tr>
+              <tr className="border-b border-gray-300 align-top">
+                <td className="p-3 font-semibold text-gray-700 align-top">
+                  Email:
+                </td>
+                <td className="p-3 text-gray-600 align-top">
+                  niraj.vishwa369@gmail.com
+                </td>
+              </tr>
+              <tr className="align-top">
+                <td className="p-3 font-semibold text-gray-700 align-top">
+                  Data:
+                </td>
+                <td className="p-3 text-gray-600 align-top">
+                  <ClassComponent2
+                    data={data}
+                    email="niraj.vishwa369@gmail.com"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     );
   }
 }
