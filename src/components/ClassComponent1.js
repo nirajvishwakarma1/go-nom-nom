@@ -34,25 +34,14 @@ class ClassComponent1 extends React.Component {
           <table className="w-full border-collapse border border-gray-300">
             <tbody>
               <tr className="border-b border-gray-300 align-top">
-                <td className="p-3 font-semibold text-gray-700 align-top">
-                  Name:
-                </td>
                 <td className="p-3 text-gray-600 align-top">
                   {this.props.name}
                 </td>
               </tr>
               <tr className="border-b border-gray-300 align-top">
-                <td className="p-3 font-semibold text-gray-700 align-top">
-                  Email:
-                </td>
-                <td className="p-3 text-gray-600 align-top">
-                  niraj.vishwa369@gmail.com
-                </td>
+                <td className="p-3 text-gray-600 align-top">lllllll</td>
               </tr>
               <tr className="align-top">
-                <td className="p-3 font-semibold text-gray-700 align-top">
-                  Data:
-                </td>
                 <td className="p-3 text-gray-600 align-top">
                   <ClassComponent2
                     data={data}

@@ -1,4 +1,5 @@
 import React from "react";
+import UserContext from "../utils/UserContext";
 
 // Class based component
 class About extends React.Component {
@@ -26,6 +27,12 @@ class About extends React.Component {
     return (
       <div className="py-8 px-4 bg-gray-100">
         <h2 className="text-3xl font-bold text-gray-800 mb-2">{name}</h2>
+        <h3>
+          Loggedin User:
+          <UserContext.Consumer>
+            {(data) => ` ${data.loggedInUser.name}`}
+          </UserContext.Consumer>
+        </h3>
         <p className="text-lg text-gray-600 mb-8">
           {Array(5).fill(lorem).join(" ")}
         </p>

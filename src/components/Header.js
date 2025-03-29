@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import logo from "../assets/images/logo.png";
 import useOnlineStatus from "../utils/useOnlineStatus.js";
-import { useState, useEffect } from "react";
 import { Link, useAsyncError } from "react-router";
+import UserContext from "../utils/UserContext.js";
 
 const navs = ["Home", "About", "Services", "Contact"];
 
 const Header = () => {
   const [buttonName, setButtonName] = useState("Login");
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const data = useContext(UserContext);
+  const { loggedInUser } = data;
+  const loggedIn = !!loggedInUser;
+  const nameArr = loggedInUser.name.split(" ");
+  const nameInitials = `${nameArr[0][0].toUpperCase()}${nameArr[
+    nameArr.length - 1
+  ][0].toUpperCase()}`;
+
+  //   const [loggedInUser] = data;
 
   // If not dependency array ==> useEffect is called on every render
   // If dependency array is empty ==> useEffect is called on initial render once.
@@ -65,14 +74,30 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <button
-                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-1 rounded"
-                onClick={() =>
-                  setButtonName(buttonName === "Login" ? "Logout" : "Login")
-                }
-              >
-                {buttonName}
-              </button>
+              {loggedIn ? (
+                <div className="fixed top-4 right-4 z-50 flex items-center gap-2 bg-blue-500 text-white p-3 rounded-full shadow-lg">
+                  {/* Online Status Indicator */}
+                  <span
+                    className={`w-3 h-3 rounded-full ${
+                      onlineStatus ? "bg-green-500" : "bg-red-500"
+                    }`}
+                  />
+
+                  {/* Profile Icon / Name Initials */}
+                  <div className="w-10 h-5 flex items-center justify-center bg-white text-blue-500 font-bold rounded-full">
+                    {nameInitials}
+                  </div>
+                </div>
+              ) : (
+                <button
+                  className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-1 rounded"
+                  onClick={() =>
+                    setButtonName(buttonName === "Login" ? "Logout" : "Login")
+                  }
+                >
+                  {buttonName}
+                </button>
+              )}
             </li>
           </ul>
         </nav>

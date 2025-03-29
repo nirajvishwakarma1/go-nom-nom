@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import RestaurantCard from "./RestaurantCard";
 import useRestaurants from "../utils/useRestaurants";
 import ShimmerRestarants from "../components/ShimmerRestaurants";
+import UserContext from "../utils/UserContext";
 
 const RestaurantCards = () => {
+  const { loggedInUser } = useContext(UserContext);
+
   // use custom hook to manage restaurants data
   const {
     restaurants,
@@ -34,19 +38,26 @@ const RestaurantCards = () => {
       </div>
 
       {/* Filters */}
-      <div className="flex justify-end gap-4 mb-6">
-        <button
-          onClick={filterTopRatedRestaurants}
-          className="px-3 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 leading-none"
-        >
-          Top Rated
-        </button>
-        <button
-          onClick={showAllRestaurants}
-          className="px-3 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 leading-none"
-        >
-          Show All
-        </button>
+      <div className="flex justify-between gap-4 mb-6">
+        <div>
+          <h4 className="font-bold text-gray-700">
+            Restaurants near {loggedInUser.name}
+          </h4>
+        </div>
+        <div>
+          <button
+            onClick={filterTopRatedRestaurants}
+            className="px-3 mr-2 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 leading-none"
+          >
+            Top Rated
+          </button>
+          <button
+            onClick={showAllRestaurants}
+            className="px-3 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 leading-none"
+          >
+            Show All
+          </button>
+        </div>
       </div>
 
       {/* Restaurant Cards Grid */}

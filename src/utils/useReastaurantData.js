@@ -15,11 +15,19 @@ const useRestaurantData = (restaurantId) => {
   const fetchRestaurantData = async (restaurantId) => {
     const data = await fetch(RESTAURANT_DATA_API + restaurantId);
     const json = await data.json();
+    if (json.data) setRestaurantData(json.data);
 
-    const resData = json.data.cards
-      .filter((card) => card?.card?.card?.info?.id === restaurantId)
-      .map((card) => card?.card?.card?.info);
-    if (resData.length > 0) setRestaurantData(resData[0]);
+    // console.log(json);
+
+    // const resDataa = json.data.cards.filter(
+    //   (card) => card?.card?.card?.info?.id === restaurantId
+    // );
+    // //   .map((card) => card);
+
+    // const resData = json.data.cards
+    //   .filter((card) => card?.card?.card?.info?.id === restaurantId)
+    //   .map((card) => card?.card?.card?.info);
+    // if (resData.length > 0) setRestaurantData(resData[0]);
   };
 
   return restaurantData;

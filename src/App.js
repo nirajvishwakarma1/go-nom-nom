@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useState, useEffect, useContext } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import RestaurantCards from "./components/RestaurantCards.js";
@@ -16,18 +16,33 @@ import ClassComponent1 from "./components/ClassComponent1.js";
 import ClassComponent2 from "./components/ClassComponent2";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 import useOnlineStatus from "./utils/useOnlineStatus.js";
+import UserContext from "./utils/UserContext.js";
 
 const Grocery = lazy(() => import("./components/Grocery.js"));
 
 const App = () => {
+  const [userInfo, setUserInfo] = useState({
+    loggedInUser: { name: "Guest User" },
+  });
+  let userData = useContext(UserContext);
+  useEffect(() => {
+    setUserInfo(userData);
+  }, []);
+
   if (!useOnlineStatus()) return <Offline />;
 
   return (
-    <>
-      <Header />
+    // Context Provider
+    <UserContext.Provider value={userInfo}>
+      {/* Nested Context Provider with different value is also possible. */}
+      <UserContext.Provider value={{ loggedInUser: { name: "Neeraj Shree" } }}>
+        <Header />
+      </UserContext.Provider>
+
+      {/* Rest of the Components */}
       <Outlet />
       <Footer />
-    </>
+    </UserContext.Provider>
   );
 };
 
