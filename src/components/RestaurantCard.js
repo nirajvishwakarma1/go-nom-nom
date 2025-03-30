@@ -16,7 +16,6 @@ const RestaurantCard = (props) => {
     sla,
     promoted = id == 438959 && "promoted",
   } = props.restaurantData;
-  console.log(props.restaurantData);
   return (
     <div>
       <div

@@ -1,14 +1,18 @@
 import React, { useState, useEffect, useContext } from "react";
 import logo from "../assets/images/logo.png";
 import useOnlineStatus from "../utils/useOnlineStatus.js";
-import { Link, useAsyncError } from "react-router";
+import { Link } from "react-router";
 import UserContext from "../utils/UserContext.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { useSelector } from "react-redux";
 
 const navs = ["Home", "About", "Services", "Contact"];
 
 const Header = () => {
   const [buttonName, setButtonName] = useState("Login");
   const [isNavOpen, setIsNavOpen] = useState(false);
+
   const data = useContext(UserContext);
   const { loggedInUser } = data;
   const loggedIn = !!loggedInUser;
@@ -16,6 +20,10 @@ const Header = () => {
   const nameInitials = `${nameArr[0][0].toUpperCase()}${nameArr[
     nameArr.length - 1
   ][0].toUpperCase()}`;
+
+  // Subscribing to out store using a Selector
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log("cartItems:", cartItems);
 
   //   const [loggedInUser] = data;
 
@@ -74,8 +82,14 @@ const Header = () => {
               </Link>
             </li>
             <li>
+              <Link to="/cart" className="font-bold">
+                {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
+                <FontAwesomeIcon icon={faShoppingCart} /> ({cartItems.length})
+              </Link>
+            </li>
+            <li>
               {loggedIn ? (
-                <div className="fixed top-4 right-4 z-50 flex items-center gap-2 bg-blue-500 text-white p-3 rounded-full shadow-lg">
+                <div className="flex items-center gap-2 bg-blue-500 text-white p-3 rounded-full shadow-lg">
                   {/* Online Status Indicator */}
                   <span
                     className={`w-3 h-3 rounded-full ${

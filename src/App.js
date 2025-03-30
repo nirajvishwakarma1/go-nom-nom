@@ -17,6 +17,9 @@ import ClassComponent2 from "./components/ClassComponent2";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 import useOnlineStatus from "./utils/useOnlineStatus.js";
 import UserContext from "./utils/UserContext.js";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore.js";
+import Cart from "./components/Cart.js";
 
 const Grocery = lazy(() => import("./components/Grocery.js"));
 
@@ -32,17 +35,21 @@ const App = () => {
   if (!useOnlineStatus()) return <Offline />;
 
   return (
-    // Context Provider
-    <UserContext.Provider value={userInfo}>
-      {/* Nested Context Provider with different value is also possible. */}
-      <UserContext.Provider value={{ loggedInUser: { name: "Neeraj Shree" } }}>
-        <Header />
-      </UserContext.Provider>
+    <Provider store={appStore}>
+      {/* Context Provider */}
+      <UserContext.Provider value={userInfo}>
+        {/* Nested Context Provider with different value is also possible. */}
+        <UserContext.Provider
+          value={{ loggedInUser: { name: "Neeraj Shree" } }}
+        >
+          <Header />
+        </UserContext.Provider>
 
-      {/* Rest of the Components */}
-      <Outlet />
-      <Footer />
-    </UserContext.Provider>
+        {/* Rest of the Components */}
+        <Outlet />
+        <Footer />
+      </UserContext.Provider>
+    </Provider>
   );
 };
 
@@ -81,6 +88,7 @@ const appRouter = createBrowserRouter([
           />
         ),
       },
+      { path: "/cart", element: <Cart /> },
     ],
     errorElement: (
       <>
