@@ -1,5 +1,5 @@
 import { CDN_URL } from "../utils/constants";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
@@ -17,7 +17,7 @@ const RestaurantCard = (props) => {
     promoted = id == 438959 && "promoted",
   } = props.restaurantData;
   return (
-    <div>
+    <div data-testid="resCard">
       <div
         className={`relative bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 overflow-hidden border-2 ${
           promoted ? "border-yellow-400" : "border-gray-200"

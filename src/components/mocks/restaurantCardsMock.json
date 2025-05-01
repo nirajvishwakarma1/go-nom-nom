@@ -1,0 +1,1173 @@
+{
+  "restaurants": [
+    {
+      "id": "492267",
+      "name": "Chinese Wok",
+      "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
+      "locality": "Kukatpally",
+      "areaName": "Kukatpally",
+      "costForTwo": "₹250 for two",
+      "cuisines": ["Chinese", "Asian", "Tibetan", "Desserts"],
+      "avgRating": 4,
+      "parentId": "61955",
+      "avgRatingString": "4.0",
+      "totalRatingsString": "2.1K+",
+      "sla": {
+        "deliveryTime": 70,
+        "lastMileTravel": 9.3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "65-70 mins",
+        "lastMileTravelString": "9.3 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-06 00:00:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹129"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "4.0",
+          "ratingCount": "170"
+        },
+        "source": "GOOGLE",
+        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "961586",
+      "name": "Pizza Hut",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/24/a391e511-d031-4b21-b8e9-c58310efa17c_961586.JPG",
+      "locality": "Srinivasa Enclave",
+      "areaName": "Gajularamaram",
+      "costForTwo": "₹350 for two",
+      "cuisines": ["Pizzas"],
+      "avgRating": 4.2,
+      "parentId": "721",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "893",
+      "sla": {
+        "deliveryTime": 30,
+        "lastMileTravel": 1.8,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "1.8 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-06 01:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "Rxawards/_CATEGORY-Pizza.png",
+            "description": "Delivery!"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Delivery!",
+                  "imageId": "Rxawards/_CATEGORY-Pizza.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹189"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "438959",
+      "name": "Olio - The Wood Fired Pizzeria",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/26/f51a5b88-00a9-4c08-b473-1fe1cc6a1015_438959.jpg",
+      "locality": "Shilpa Layout",
+      "areaName": "Kukatpally",
+      "costForTwo": "₹300 for two",
+      "cuisines": [
+        "Pizzas",
+        "Pastas",
+        "Italian",
+        "Fast Food",
+        "Snacks",
+        "Beverages",
+        "Desserts"
+      ],
+      "avgRating": 4.1,
+      "parentId": "11633",
+      "avgRatingString": "4.1",
+      "totalRatingsString": "3.7K+",
+      "sla": {
+        "deliveryTime": 76,
+        "lastMileTravel": 9.1,
+        "serviceability": "SERVICEABLE",
+        "slaString": "75-80 mins",
+        "lastMileTravelString": "9.1 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-06 06:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "newg.png",
+            "description": "Gourmet"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Gourmet",
+                  "imageId": "newg.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹99"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "995708",
+      "name": "Raju Gari Biryani",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/25/3ffa6800-c3c2-4f78-8c5b-7cb865b57d84_995708.jpg",
+      "locality": "Lenin Nagar",
+      "areaName": "Srinivas Nagar",
+      "costForTwo": "₹300 for two",
+      "cuisines": ["Biryani"],
+      "avgRating": 3.8,
+      "parentId": "165947",
+      "avgRatingString": "3.8",
+      "totalRatingsString": "392",
+      "sla": {
+        "deliveryTime": 24,
+        "lastMileTravel": 2.9,
+        "serviceability": "SERVICEABLE",
+        "slaString": "20-25 mins",
+        "lastMileTravelString": "2.9 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-05 23:45:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "50% OFF",
+        "subHeader": "UPTO ₹100"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "isNewlyOnboarded": true,
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "832054",
+      "name": "Grameen Kulfi",
+      "cloudinaryImageId": "9222019938518b7ebe87fa1c2ae382e4",
+      "locality": "Bagh Ameer",
+      "areaName": "Kukatpally",
+      "costForTwo": "₹120 for two",
+      "cuisines": ["Ice Cream", "Desserts"],
+      "avgRating": 4.6,
+      "veg": true,
+      "parentId": "12175",
+      "avgRatingString": "4.6",
+      "totalRatingsString": "158",
+      "sla": {
+        "deliveryTime": 52,
+        "lastMileTravel": 8.7,
+        "serviceability": "SERVICEABLE",
+        "slaString": "50-55 mins",
+        "lastMileTravelString": "8.7 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-06 00:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "v1695133679/badges/Pure_Veg111.png",
+            "description": "pureveg"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "pureveg",
+                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹125 OFF",
+        "subHeader": "ABOVE ₹399",
+        "discountTag": "FLAT DEAL"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "1065915",
+      "name": "Varalakshmi Tiffins",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/22/e303496d-1d25-45e0-ad47-826c053d22a6_1065915.jpg",
+      "locality": "Alwal",
+      "areaName": "Alwal",
+      "costForTwo": "₹300 for two",
+      "cuisines": ["South Indian", "Beverages", "Healthy Food"],
+      "avgRating": 4.2,
+      "veg": true,
+      "parentId": "6482",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "39",
+      "sla": {
+        "deliveryTime": 33,
+        "lastMileTravel": 6.4,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "6.4 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-05 23:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "Rxawards/_CATEGORY-South%20Indian.png",
+            "description": "Delivery!"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Delivery!",
+                  "imageId": "Rxawards/_CATEGORY-South%20Indian.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "60% OFF",
+        "subHeader": "UPTO ₹120"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "isNewlyOnboarded": true,
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "619437",
+      "name": "New Sagar Restaurant & Bakers",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/8/4bbb6b53-c93c-438e-a3cb-bba4efdb555e_619437.ss.jpg",
+      "locality": "Jeedimetla",
+      "areaName": "Suraram",
+      "costForTwo": "₹400 for two",
+      "cuisines": ["Indian", "Chinese", "Fast Food"],
+      "avgRating": 4.1,
+      "parentId": "369112",
+      "avgRatingString": "4.1",
+      "totalRatingsString": "9.4K+",
+      "sla": {
+        "deliveryTime": 28,
+        "lastMileTravel": 5,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "5.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-05 23:59:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "66% OFF",
+        "subHeader": "UPTO ₹126"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "3.9",
+          "ratingCount": "10K+"
+        },
+        "source": "GOOGLE",
+        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "50572",
+      "name": "Hotel Shubham Celebrations - Dhanturi Group of Hotels",
+      "cloudinaryImageId": "eovibhnx5hb84hh9xv7f",
+      "locality": "Jeedimetla",
+      "areaName": "Jeedimetla",
+      "costForTwo": "₹300 for two",
+      "cuisines": ["Biryani", "Chinese", "South Indian", "Tandoor"],
+      "avgRating": 4.2,
+      "parentId": "488967",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "44K+",
+      "sla": {
+        "deliveryTime": 29,
+        "lastMileTravel": 3.7,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "3.7 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-05 23:00:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹150 OFF",
+        "subHeader": "ABOVE ₹299",
+        "discountTag": "FLAT DEAL"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "4.1",
+          "ratingCount": "8.5K+"
+        },
+        "source": "GOOGLE",
+        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    }
+  ],
+  "filteredRestaurants": [
+    {
+      "id": "492267",
+      "name": "Chinese Wok",
+      "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
+      "locality": "Kukatpally",
+      "areaName": "Kukatpally",
+      "costForTwo": "₹250 for two",
+      "cuisines": ["Chinese", "Asian", "Tibetan", "Desserts"],
+      "avgRating": 4,
+      "parentId": "61955",
+      "avgRatingString": "4.0",
+      "totalRatingsString": "2.1K+",
+      "sla": {
+        "deliveryTime": 70,
+        "lastMileTravel": 9.3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "65-70 mins",
+        "lastMileTravelString": "9.3 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-06 00:00:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹129"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "4.0",
+          "ratingCount": "170"
+        },
+        "source": "GOOGLE",
+        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "961586",
+      "name": "Pizza Hut",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/24/a391e511-d031-4b21-b8e9-c58310efa17c_961586.JPG",
+      "locality": "Srinivasa Enclave",
+      "areaName": "Gajularamaram",
+      "costForTwo": "₹350 for two",
+      "cuisines": ["Pizzas"],
+      "avgRating": 4.2,
+      "parentId": "721",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "893",
+      "sla": {
+        "deliveryTime": 30,
+        "lastMileTravel": 1.8,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "1.8 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-06 01:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "Rxawards/_CATEGORY-Pizza.png",
+            "description": "Delivery!"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Delivery!",
+                  "imageId": "Rxawards/_CATEGORY-Pizza.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹189"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "438959",
+      "name": "Olio - The Wood Fired Pizzeria",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/26/f51a5b88-00a9-4c08-b473-1fe1cc6a1015_438959.jpg",
+      "locality": "Shilpa Layout",
+      "areaName": "Kukatpally",
+      "costForTwo": "₹300 for two",
+      "cuisines": [
+        "Pizzas",
+        "Pastas",
+        "Italian",
+        "Fast Food",
+        "Snacks",
+        "Beverages",
+        "Desserts"
+      ],
+      "avgRating": 4.1,
+      "parentId": "11633",
+      "avgRatingString": "4.1",
+      "totalRatingsString": "3.7K+",
+      "sla": {
+        "deliveryTime": 76,
+        "lastMileTravel": 9.1,
+        "serviceability": "SERVICEABLE",
+        "slaString": "75-80 mins",
+        "lastMileTravelString": "9.1 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-06 06:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "newg.png",
+            "description": "Gourmet"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Gourmet",
+                  "imageId": "newg.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹99"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "995708",
+      "name": "Raju Gari Biryani",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/25/3ffa6800-c3c2-4f78-8c5b-7cb865b57d84_995708.jpg",
+      "locality": "Lenin Nagar",
+      "areaName": "Srinivas Nagar",
+      "costForTwo": "₹300 for two",
+      "cuisines": ["Biryani"],
+      "avgRating": 3.8,
+      "parentId": "165947",
+      "avgRatingString": "3.8",
+      "totalRatingsString": "392",
+      "sla": {
+        "deliveryTime": 24,
+        "lastMileTravel": 2.9,
+        "serviceability": "SERVICEABLE",
+        "slaString": "20-25 mins",
+        "lastMileTravelString": "2.9 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-05 23:45:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "50% OFF",
+        "subHeader": "UPTO ₹100"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "isNewlyOnboarded": true,
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "832054",
+      "name": "Grameen Kulfi",
+      "cloudinaryImageId": "9222019938518b7ebe87fa1c2ae382e4",
+      "locality": "Bagh Ameer",
+      "areaName": "Kukatpally",
+      "costForTwo": "₹120 for two",
+      "cuisines": ["Ice Cream", "Desserts"],
+      "avgRating": 4.6,
+      "veg": true,
+      "parentId": "12175",
+      "avgRatingString": "4.6",
+      "totalRatingsString": "158",
+      "sla": {
+        "deliveryTime": 52,
+        "lastMileTravel": 8.7,
+        "serviceability": "SERVICEABLE",
+        "slaString": "50-55 mins",
+        "lastMileTravelString": "8.7 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-06 00:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "v1695133679/badges/Pure_Veg111.png",
+            "description": "pureveg"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "pureveg",
+                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹125 OFF",
+        "subHeader": "ABOVE ₹399",
+        "discountTag": "FLAT DEAL"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "1065915",
+      "name": "Varalakshmi Tiffins",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/22/e303496d-1d25-45e0-ad47-826c053d22a6_1065915.jpg",
+      "locality": "Alwal",
+      "areaName": "Alwal",
+      "costForTwo": "₹300 for two",
+      "cuisines": ["South Indian", "Beverages", "Healthy Food"],
+      "avgRating": 4.2,
+      "veg": true,
+      "parentId": "6482",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "39",
+      "sla": {
+        "deliveryTime": 33,
+        "lastMileTravel": 6.4,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "6.4 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-05 23:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "Rxawards/_CATEGORY-South%20Indian.png",
+            "description": "Delivery!"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Delivery!",
+                  "imageId": "Rxawards/_CATEGORY-South%20Indian.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "60% OFF",
+        "subHeader": "UPTO ₹120"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "isNewlyOnboarded": true,
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "619437",
+      "name": "New Sagar Restaurant & Bakers",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/8/4bbb6b53-c93c-438e-a3cb-bba4efdb555e_619437.ss.jpg",
+      "locality": "Jeedimetla",
+      "areaName": "Suraram",
+      "costForTwo": "₹400 for two",
+      "cuisines": ["Indian", "Chinese", "Fast Food"],
+      "avgRating": 4.1,
+      "parentId": "369112",
+      "avgRatingString": "4.1",
+      "totalRatingsString": "9.4K+",
+      "sla": {
+        "deliveryTime": 28,
+        "lastMileTravel": 5,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "5.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-05 23:59:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "66% OFF",
+        "subHeader": "UPTO ₹126"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "3.9",
+          "ratingCount": "10K+"
+        },
+        "source": "GOOGLE",
+        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    {
+      "id": "50572",
+      "name": "Hotel Shubham Celebrations - Dhanturi Group of Hotels",
+      "cloudinaryImageId": "eovibhnx5hb84hh9xv7f",
+      "locality": "Jeedimetla",
+      "areaName": "Jeedimetla",
+      "costForTwo": "₹300 for two",
+      "cuisines": ["Biryani", "Chinese", "South Indian", "Tandoor"],
+      "avgRating": 4.2,
+      "parentId": "488967",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "44K+",
+      "sla": {
+        "deliveryTime": 29,
+        "lastMileTravel": 3.7,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "3.7 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-04-05 23:00:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹150 OFF",
+        "subHeader": "ABOVE ₹299",
+        "discountTag": "FLAT DEAL"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "4.1",
+          "ratingCount": "8.5K+"
+        },
+        "source": "GOOGLE",
+        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    }
+  ],
+  "searchText": ""
+}

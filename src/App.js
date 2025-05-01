@@ -14,7 +14,7 @@ import Offline from "./components/Offline.js";
 import Test from "./components/Test";
 import ClassComponent1 from "./components/ClassComponent1.js";
 import ClassComponent2 from "./components/ClassComponent2";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import useOnlineStatus from "./utils/useOnlineStatus.js";
 import UserContext from "./utils/UserContext.js";
 import { Provider } from "react-redux";
@@ -97,6 +97,9 @@ const appRouter = createBrowserRouter([
         <Footer />
       </>
     ),
+    future: {
+      v7_startTransition: true,
+    },
   },
 ]);
 

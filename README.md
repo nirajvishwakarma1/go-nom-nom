@@ -77,3 +77,26 @@ const HigherOrderComponent = (Component) => {
 - Create a slice (cart slice)
 - Dispatch(action)
 - Read data using Selector
+
+### Types of testing (developer)
+
+- Unit Testing
+- Integration Testing
+- End to End Testing(E2E Testing)
+
+### Setting up testing in our app
+
+- Install React Testing Library
+- Install jest
+- Install Babel dependency
+  (required when using jest with Babel. We are using Babel as dependency of Parcel)
+- Configure Babel
+- Configure Parcel Config file to disable default Babel transpilation
+- Jest configuration
+  Command: npx jest --init
+- Install jsdom library
+- npm run test
+- Install @babel/preset-react - to make JSX work in test cases
+- Include @babel/preset-react inside my babel configuration
+- Install @testing-library/jest-dom
+  npm i -D @testing-library/jest-dom

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
-import logo from "../assets/images/logo.png";
+// import logo from "../assets/images/logo.png";
 import useOnlineStatus from "../utils/useOnlineStatus.js";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import UserContext from "../utils/UserContext.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +15,8 @@ const Header = () => {
 
   const data = useContext(UserContext);
   const { loggedInUser } = data;
-  const loggedIn = !!loggedInUser;
+  // const loggedIn = !!loggedInUser;
+  const loggedIn = false;
   const nameArr = loggedInUser.name.split(" ");
   const nameInitials = `${nameArr[0][0].toUpperCase()}${nameArr[
     nameArr.length - 1
@@ -41,7 +42,8 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo / Brand */}
         <Link to="/" className="flex items-center gap-2 text-xl font-bold">
-          <img src={logo} alt="Go Nom Nom" className="h-8" />
+          {/* <img src={logo} alt="Go Nom Nom" className="h-8" /> */}
+          <h1 data-testid="logo">Go Nom Nom</h1>
         </Link>
 
         {/* Mobile Menu Toggle */}
@@ -84,7 +86,8 @@ const Header = () => {
             <li>
               <Link to="/cart" className="font-bold">
                 {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
-                <FontAwesomeIcon icon={faShoppingCart} /> ({cartItems.length})
+                <FontAwesomeIcon icon={faShoppingCart} /> Cart (
+                {cartItems.length})
               </Link>
             </li>
             <li>
@@ -104,7 +107,7 @@ const Header = () => {
                 </div>
               ) : (
                 <button
-                  className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-1 rounded"
+                  className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-1 rounded text-sm cursor-pointer"
                   onClick={() =>
                     setButtonName(buttonName === "Login" ? "Logout" : "Login")
                   }

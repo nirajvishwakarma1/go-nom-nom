@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { CDN_URL } from "../utils/constants";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import RestaurantCategoryMenu from "./RestaurantCategoryMenu";
 import useRestaurantData from "../utils/useReastaurantData";
 import ShimmerRestaurant from "./ShimmerRestaurant";
 
 const RestaurantDetails = () => {
   const [showIndex, setShowIndex] = useState(0);
-
-  console.log("showIndex:", showIndex);
 
   const { id } = useParams();
   const restaurantData = useRestaurantData(id);

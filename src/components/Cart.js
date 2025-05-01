@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import CartItem from "./CartItem";
 import { clearCart } from "../utils/cartSlice";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   // Make sure to subscribe to right portion of store

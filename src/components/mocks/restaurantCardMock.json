@@ -1,0 +1,59 @@
+{
+  "id": "438959",
+  "name": "Vasireddy Swagruha Foods",
+  "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/7/2/31f2da2f-01f7-4d2c-bba7-734370129e35_919388.JPG",
+  "locality": "Gajularamaram",
+  "areaName": "Jeedimetla & Chintal",
+  "costForTwo": "₹300 for two",
+  "cuisines": ["Desserts"],
+  "avgRating": 4.5,
+  "parentId": "951",
+  "avgRatingString": "4.5",
+  "totalRatingsString": "98",
+  "sla": {
+    "deliveryTime": 26,
+    "lastMileTravel": 1.8,
+    "serviceability": "SERVICEABLE",
+    "slaString": "25-30 mins",
+    "lastMileTravelString": "1.8 km",
+    "iconType": "ICON_TYPE_EMPTY"
+  },
+  "availability": {
+    "nextCloseTime": "2025-04-05 22:00:00",
+    "opened": true
+  },
+  "badges": {},
+  "isOpen": true,
+  "aggregatedDiscountInfoV2": {},
+  "type": "F",
+  "badgesV2": {
+    "entityBadges": {
+      "imageBased": {},
+      "textBased": {},
+      "textExtendedBadges": {}
+    }
+  },
+  "orderabilityCommunication": {
+    "title": {},
+    "subTitle": {},
+    "message": {},
+    "customIcon": {}
+  },
+  "differentiatedUi": {
+    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    "differentiatedUiMediaDetails": {
+      "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+      "lottie": {},
+      "video": {}
+    }
+  },
+  "reviewsSummary": {},
+  "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+  "restaurantOfferPresentationInfo": {},
+  "externalRatings": {
+    "aggregatedRating": {
+      "rating": "--"
+    }
+  },
+  "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+}

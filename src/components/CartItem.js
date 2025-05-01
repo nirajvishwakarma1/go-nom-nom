@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CDN_URL } from "../utils/constants";
-import { faInr } from "@fortawesome/free-solid-svg-icons";
+import { faInr, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { useDispatch } from "react-redux";
 
 const CartItem = ({ data }) => {
   console.log(data);
@@ -8,17 +9,15 @@ const CartItem = ({ data }) => {
     name,
     price,
     defaultPrice,
-    category,
-    description,
     imageId,
     itemAttribute: { vegClassifier },
-    ratings: {
-      aggregatedRating: { rating, ratingCount },
-    },
   } = data;
 
   return (
-    <div className="flex flex-row-reverse border-b-1 border-gray-300 last:border-0 pb-5 mb-5">
+    <div
+      data-testid="cartitem"
+      className="flex flex-row-reverse border-b-1 border-gray-300 last:border-0 pb-5 mb-5"
+    >
       <div className="size-2/10">
         {imageId && (
           <img
